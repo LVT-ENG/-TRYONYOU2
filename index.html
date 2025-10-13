@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryOnYou - Virtual Try-On Experience</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>TryOnYou</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#try-on">Try On</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Virtual Try-On Experience</h2>
+                <p>Experience fashion like never before with our cutting-edge virtual try-on technology</p>
+                <button class="cta-button" onclick="startTryOn()">Start Trying On</button>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Real-Time Preview</h3>
+                        <p>See how clothes look on you instantly with our advanced AR technology</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Perfect Fit</h3>
+                        <p>Get accurate sizing recommendations based on your measurements</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Wide Selection</h3>
+                        <p>Browse through thousands of items from top fashion brands</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="try-on" class="try-on-section">
+            <div class="container">
+                <h2>Try On Studio</h2>
+                <div class="try-on-interface">
+                    <div class="camera-view">
+                        <div class="camera-placeholder">
+                            <p>Camera View</p>
+                            <p>Click "Start Camera" to begin</p>
+                        </div>
+                        <button class="camera-btn" onclick="toggleCamera()">Start Camera</button>
+                    </div>
+                    <div class="product-selector">
+                        <h3>Select Products</h3>
+                        <div class="product-grid">
+                            <div class="product-item" onclick="selectProduct('shirt1')">
+                                <div class="product-placeholder">Shirt 1</div>
+                            </div>
+                            <div class="product-item" onclick="selectProduct('shirt2')">
+                                <div class="product-placeholder">Shirt 2</div>
+                            </div>
+                            <div class="product-item" onclick="selectProduct('dress1')">
+                                <div class="product-placeholder">Dress 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 TryOnYou. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
