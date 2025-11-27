@@ -1,24 +1,28 @@
 {
-  "name": "tryonyou-app",
+  "name": "tryonyou-vite-rebuild",
+  "private": true,
   "version": "1.0.0",
-  "description": "TryOnYou - Virtual Try-On Application",
-  "main": "index.html",
+  "description": "TryOnYou - Virtual Try-On Application (Reconstruido con Vite 7.1.2)",
+  "type": "module",
   "scripts": {
-    "start": "npx http-server . -p 8080 -o",
-    "build": "echo 'Build complete'",
-    "deploy": "echo 'Deployment script - configure with your hosting service'",
-    "test": "echo 'Testing complete'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "tryonyou",
     "virtual",
     "try-on",
     "fashion",
-    "webapp"
+    "webapp",
+    "vite"
   ],
   "author": "TryOnYou Team",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "vite": "^5.0.0"
   }
 }
